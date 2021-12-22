@@ -1,5 +1,5 @@
 include ':prefs'
 include ':scripts'
 include ':libautomata'
-rootProject.name='Fate Grand Automata'
+rootProject.name='Konosuba Automata'
 include ':app'

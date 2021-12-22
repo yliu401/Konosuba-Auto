@@ -32,11 +32,11 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.mathewsachin.fategrandautomata"
+        applicationId "com.yliu401.konosubaautomata"
         minSdkVersion 24
         targetSdkVersion 30
-        versionCode Integer.valueOf(System.env.FGA_VERSION_CODE ?: 1)
-        versionName(System.env.FGA_VERSION_NAME ?: "0.1.0")
+        versionCode Integer.valueOf(System.env.KFDAuto_VERSION_CODE ?: 1)
+        versionName(System.env.KFDAuto_VERSION_NAME ?: "0.1.0")
 
         ndk {
             abiFilters "armeabi-v7a", "arm64-v8a"
@@ -51,9 +51,9 @@ android {
             keyPassword "123abc"
         }
         release {
-            storeFile file("fgautomata.keystore")
+            storeFile file("kfdautomata.keystore")
             storePassword System.env.KEYSTORE_PASS
-            keyAlias "fgautomata"
+            keyAlias "kfdautomata"
             keyPassword System.env.KEYSTORE_PASS
         }
     }
