@@ -1,57 +1,18 @@
-# Fate/Grand Automata
-[![CI](https://github.com/MathewSachin/Fate-Grand-Automata/workflows/CI/badge.svg?branch=master&event=push)](https://github.com/MathewSachin/Fate-Grand-Automata/actions)
+# Konosuba Automata
+Very simplistic program to automate repetitive gameplay in Konosuba: Fantastic Days. 
+![Logo](https://1x41wi4ekjc71rf2x7zbpt6azg-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/107a97ca5bd4a571edcebec54a66fc32.jpg.webp)
 
-![Logo](app/src/release/res/mipmap-xxxhdpi/ic_launcher_round.png)
+Auto-repeat app for Konosuba: Fantastic Days, detect's the "Next", "Repeat", and "Ok" buttons then clicks the buttons in the corresponding order to repeat the same stage.
 
-Auto-battle app for F/GO (Android 7 or later, no need for root on phones).  
+A lot of this code has been forked from https://github.com/Fate-Grand-Automata/FGA, without them this code would not exist and there still exists a lot of redudant code that does not apply to the app Konosuba: Fantastic Days but, for the game Fate Grand Order.
 
-Download from our [website](https://fate-grand-automata.github.io)
-
-This is a **Kotlin** port of [FGO-Lua][FGOLua] as an Android app with UI for configuration and without a time-limit on use.  
-It doesn't tamper with the game in anyway and works by looking at the screen and tapping things just like a normal user would do.  
-It's not made to do the story for you, but to automate the mundane farming.
-
-Having Trouble? See the [Troubleshooting Guide](https://github.com/MathewSachin/Fate-Grand-Automata/wiki/Troubleshooting) first.  
-Join us on our [GamePress thread Part 2](https://community.gamepress.gg/t/fate-grand-autamata-discussion-and-help-thread-round-2/107040) for discussions.  
-Old Gamepress thread: [GamePress thread](https://community.gamepress.gg/t/automatic-farming-app-fate-grand-automata/72155)
-
-## Video Guide by @reconman
-
-[![Watch the video guide](https://img.youtube.com/vi/JOwupZ4W8AQ/sddefault.jpg)](https://youtu.be/JOwupZ4W8AQ)
-
+This is just a very simple/fun project I decided to work on and make the pre-forked program work for a different existing game.
+Does not have much functionality other than re-running the same battle again as I found this process to be very annoying to do manually. As stated from before a lot of functionality is irrelavant as it only applies to Fate Grand Order.
+I may or may not add more funcationality, depending on the users, but highly unlikely as I just made this for myself.
 
 ## How to Use?
 1. Install from the link given above and launch the app.
 2. Click on `Start Service` and give all the permissions it asks for.
-3. Open FGO. Now, you can see a button with play icon on it floating on screen.
-4. Go to the node you want to farm.
-5. Press Play to start. The same button can be pressed to pause/stop later.
-
-Check the [Troubleshooting Guide](https://github.com/MathewSachin/Fate-Grand-Automata/wiki/Troubleshooting) first if you face any problems.
-
-## How to make/use images of Servant/CE/Friend?
-
-See the wiki page for [Support Image Maker](https://github.com/MathewSachin/Fate-Grand-Automata/wiki/Support-Image-Maker).
-
-## What about other scripts like Lottery and Friend Gacha?
-When you click on the PLAY button, the app detects which script can be run on the current screen and presents it to you.
-
-## How does it work?
-This is a native Android app written in Kotlin.
-We use [OpenCV](https://opencv.org/) for image recognition,
-[Media Projection](https://developer.android.com/reference/android/media/projection/MediaProjection) for taking screenshots
-and [Accessibility Service](https://developer.android.com/guide/topics/ui/accessibility) for clicking/swiping.
-
-## Acknowledgements
-- [FGO-Lua][FGOLua] developers are the real deal. Without them this app won't exist.
-- We're using OpenCV Android package from: https://github.com/iamareebjamal/opencv-android
-- The icons are from https://materialdesignicons.com/
-- Drag-sort logic on Card Priority screen is thanks to https://medium.com/@ipaulpro/drag-and-swipe-with-recyclerview-6a6f0c422efd
-
-[FGOLua]: https://github.com/29988122/Fate-Grand-Order_Lua
-
-## Like the project? Want to support me?
-~~Just pray that I can roll [Skadi](https://gamepress.gg/grandorder/servant/scathachskadi)!~~ `SUCCESS!`  
-Oh, and code/doc contributions are surely welcome!
-
-For donations, see the [wiki](https://github.com/MathewSachin/Fate-Grand-Automata/wiki/Donations).
+3. Open Konosuba: Fantastic Days. Now, you can see a button with play icon on it floating on screen.
+4. Run the battle you want to repeat
+5. Once the battle is complete, press play and it will run forever until it runs out of staminia (May update this if people ask, but highly unlikely).
