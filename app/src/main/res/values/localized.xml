@@ -95,6 +95,7 @@
     <string name="p_runs">Runs</string>
     <string name="p_roll_limit">Limit number of rolls</string>
     <string name="p_prevent_lottery_box_reset">Prevent box reset</string>
+    <string name="p_ms2">"Click okay to run"</string>
 
     <string name="p_battle_config_name">Name</string>
     <string name="p_battle_config_cmd">Command</string>

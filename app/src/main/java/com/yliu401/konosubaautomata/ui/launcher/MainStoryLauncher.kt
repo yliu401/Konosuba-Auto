@@ -51,7 +51,7 @@ fun MSLauncher(
                 .clickable { shouldLimit = !shouldLimit }
         ) {
             Text(
-                stringResource(R.string.p_roll_limit),
+                stringResource(R.string.p_ms2),
                 style = MaterialTheme.typography.body2,
                 color = MaterialTheme.colors.secondary
             )

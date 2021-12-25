@@ -72,5 +72,11 @@ enum class Images {
     Replay,
     MainStoryP1,
     Inv_Ticket,
+    LeftArrow,
+    Hard,
+    Empty,
+    Three,
+    Zero,
+
 
 }

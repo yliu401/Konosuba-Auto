@@ -27,11 +27,17 @@ class Locations @Inject constructor(
     val nextScreenRegion = Region(-360, 1200, 600, 220).xFromCenter()
     val nextClick = Location(0, 1300).xFromCenter()
     //Replay and Ok (Konosuba) C_1
-    val replayRegion = Region(-460, 1200, 500, 220).xFromCenter()
+    val replayRegion = Region(-360, 1200, 600, 220).xFromCenter()//Region(-460, 1200, 500, 220).xFromCenter()
     val OkRegion = Region(-150,930, 400, 220).xFromCenter()
     val clickOk = Location(280, 960).xFromCenter() //-310 for cancel
 
+    //C_2
     val invalidRegion =  Region(-120, 1050, 430, 150).xFromCenter()
+
+    val leftArrowRegion = Region(-470, 640, 130, 150).xFromCenter() //left arrow key
+    val leftArrowClick = Location(-450, 675).xFromCenter()
+
+
 
 
     //FGO CODE
