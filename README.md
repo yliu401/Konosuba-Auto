@@ -9,6 +9,7 @@ A lot of this code has been forked from https://github.com/Fate-Grand-Automata/F
 This is just a very simple/fun project I decided to work on and make the pre-forked program work for a different existing game.
 Does not have much functionality other than re-running the same battle again as I found this process to be very annoying to do manually. As stated from before a lot of functionality is irrelavant as it only applies to Fate Grand Order.
 I may or may not add more funcationality, depending on the users, but highly unlikely as I just made this for myself.
+
 EDIT: NEW FUNCATIONALITY TO AUTO RUN HARD MAINSTORY HAS BEEN ADDED(It assumes you have cleared all Hard missions). If you have not three crowned the mission it will just skip the stage; I may add functionality to run the stage with your team instead of using skip tickets if you have not three crowned the stage.
 
 ## How to Use?
@@ -20,4 +21,5 @@ EDIT: NEW FUNCATIONALITY TO AUTO RUN HARD MAINSTORY HAS BEEN ADDED(It assumes yo
 
 ## To Auto Run Hard MainStory
 Click Quest -> Main Quests -> Press play button.
-Then the script will run through Hard MainStory from the Interlude and go to chapter 1 using skip tickets. WARNING: IT DOES USE YOUR STAMINA BEEF TO REFILL YOUR STAMINA.
+Then the script will run through Hard MainStory from the Interlude and go to chapter 1 using skip tickets. 
+WARNING: IT DOES USE YOUR STAMINA BEEF TO REFILL YOUR STAMINA.
