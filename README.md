@@ -16,3 +16,7 @@ I may or may not add more funcationality, depending on the users, but highly unl
 3. Open Konosuba: Fantastic Days. Now, you can see a button with play icon on it floating on screen.
 4. Run the battle you want to repeat
 5. Once the battle is complete, press play and it will run forever until it runs out of stamina (May update this if people ask, but highly unlikely).
+
+## To Auto Run Hard MainStory
+Click Quest -> Main Quests -> Press play button.
+Then the script will run through Hard MainStory from the Interlude and go to chapter 1 using skip tickets.
