@@ -208,6 +208,7 @@
     <string name="p_script_mode_fp">Friend Gacha</string>
     <string name="p_script_mode_support_image_maker">Support Image Maker</string>
     <string name="p_script_mode_gift_box">Gift Box</string>
+    <string name="p_script_mode_ms" translatable="false">Main Story Runner</string>
 
     <string name="p_max_gold_ember_set_size">Max Gold ember set size</string>
 

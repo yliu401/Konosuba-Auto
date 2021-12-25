@@ -1,5 +1,5 @@
 # Konosuba Automata
-Very simplistic program to automate repetitive gameplay in Konosuba: Fantastic Days. 
+Very simplistic program to automate repetitive gameplay in Konosuba: Fantastic Days. Only works for english verison.
 ![Logo](https://1x41wi4ekjc71rf2x7zbpt6azg-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/107a97ca5bd4a571edcebec54a66fc32.jpg.webp)
 
 Auto-repeat app for Konosuba: Fantastic Days, detect's the "Next", "Repeat", and "Ok" buttons then clicks the buttons in the corresponding order to repeat the same stage.

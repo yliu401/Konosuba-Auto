@@ -15,4 +15,5 @@ interface ScriptEntryPoint {
     fun ceBomb(): AutoCEBomb
 
     fun autoDetect(): AutoDetect
+    fun MainStory(): AutoMainStory //AutoMainStory.kt in entry points
 }

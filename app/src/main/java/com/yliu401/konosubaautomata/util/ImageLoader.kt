@@ -114,7 +114,15 @@ class ImageLoader @Inject constructor(
         Images.Okay -> "okay.png"
         Images.Next -> "next.png"
         Images.Replay -> "replay.png"
-
+        Images.MainStoryP1 -> "MS_P1.png"
+        //invalid ticket
+        Images.Inv_Ticket -> "inv_ticket.png"
+        Images.LeftArrow -> "leftarrow.png"
+        //Hard Image
+        Images.Hard -> "hard.png"
+        Images.Empty -> "empty.png"
+        Images.Three -> "three.png"
+        Images.Zero -> "zero.png"
     }
 
     override operator fun get(img: Images): IPattern = synchronized(regionCachedPatterns) {

@@ -157,7 +157,8 @@ class AutoBattle @Inject constructor(
         // if the validator function evaluates to true, the associated action function is called
         val screens: Map<() -> Boolean, () -> Unit> = mapOf(
             {isInNext()} to {next()},
-            {isInReplay()} to {replay()}
+            {isInReplay()} to {replay()},
+           // {isInLeftArrow()} to {Left()},
            /* { connectionRetry.needsToRetry() } to { connectionRetry.retry() },
             { battle.isIdle() } to { battle.performBattle() },
             { isInMenu() } to { menu() },
@@ -189,6 +190,11 @@ class AutoBattle @Inject constructor(
             Duration.seconds(1).wait()
         }
     }
+    private fun isInLeftArrow() = images[Images.LeftArrow] in locations.leftArrowRegion
+    private fun Left(){
+        locations.leftArrowClick.click()
+    }
+
     //If next.png is on the screen,
     private fun isInNext() = images[Images.Next] in locations.nextScreenRegion
     private fun next(){
@@ -204,7 +210,8 @@ class AutoBattle @Inject constructor(
         Duration.seconds(0.6).wait()
         locations.clickOk.click()
     }
-
+    //If Part 1 is on screen
+    //private fun isInMainStory() = images[Images.MainstoryP1] in locations.nextScreenRegion
 
     /**
      *  Checks if in menu.png is on the screen, indicating that a quest can be chosen.

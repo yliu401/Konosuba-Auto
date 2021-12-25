@@ -15,25 +15,32 @@ class Locations @Inject constructor(
     val lottery: LotteryLocations,
     val support: SupportScreenLocations,
     val attack: AttackScreenLocations,
-    val battle: BattleScreenLocations
+    val battle: BattleScreenLocations,
+    val MainStory: MainStoryLocations,
 ): IScriptAreaTransforms by scriptAreaTransforms {
 
     val continueRegion = Region(120, 1000, 800, 200).xFromCenter()
     val continueBoostClick = Location(-20, 1120).xFromCenter()
 
     val inventoryFullRegion = Region(-280, 860, 560, 190).xFromCenter()
-    //First Next (Konosuba)
+    //First Next (Konosuba) C_1
     val nextScreenRegion = Region(-360, 1200, 600, 220).xFromCenter()
     val nextClick = Location(0, 1300).xFromCenter()
-
-    //Replay and Ok (Konosuba)
+    //Replay and Ok (Konosuba) C_1
     val replayRegion = Region(-460, 1200, 500, 220).xFromCenter()
-
     val OkRegion = Region(-150,930, 400, 220).xFromCenter()
-
     val clickOk = Location(280, 960).xFromCenter() //-310 for cancel
 
+    //C_2
+    val invalidRegion =  Region(-120, 1050, 430, 150).xFromCenter()
 
+    val leftArrowRegion = Region(-470, 640, 130, 150).xFromCenter() //left arrow key
+    val leftArrowClick = Location(-450, 675).xFromCenter()
+
+
+
+
+    //FGO CODE
     val menuScreenRegion =
         (if (isWide)
             Region(-600, 1200, 600, 240)

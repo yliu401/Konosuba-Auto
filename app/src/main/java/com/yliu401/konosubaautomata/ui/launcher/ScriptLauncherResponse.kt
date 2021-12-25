@@ -21,6 +21,7 @@ sealed class ScriptLauncherResponse {
         val limitMats: Int?,
         val waitApRegen: Boolean
     ): ScriptLauncherResponse()
+    data class MainStory(val run: Boolean): ScriptLauncherResponse()
 }
 
 class ScriptLauncherResponseBuilder(

@@ -65,7 +65,18 @@ enum class Images {
     CEMercyLv1,
     CEProsperityLv1,
     CESynchronizationLv1,
+
+    //this then goes into ImageLoader.kt
     Okay,
     Next,
     Replay,
+    MainStoryP1,
+    Inv_Ticket,
+    LeftArrow,
+    Hard,
+    Empty,
+    Three,
+    Zero,
+
+
 }

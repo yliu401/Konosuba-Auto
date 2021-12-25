@@ -32,6 +32,7 @@ fun ScriptLauncher(
                 ScriptModeEnum.Lottery -> lotteryLauncher(prefs, modifier)
                 ScriptModeEnum.PresentBox -> giftBoxLauncher(prefs, modifier)
                 ScriptModeEnum.CEBomb -> ceBombLauncher(prefs, modifier)
+                ScriptModeEnum.MainStory -> MSLauncher(prefs, modifier)
             }
 
             Divider()

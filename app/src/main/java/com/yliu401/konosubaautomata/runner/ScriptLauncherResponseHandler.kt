@@ -43,6 +43,13 @@ class ScriptLauncherResponseHandler @Inject constructor(
 
                 ScriptModeEnum.CEBomb
             }
+            //Konosuba Main Story Battle
+            is ScriptLauncherResponse.MainStory -> {
+                ScriptModeEnum.MainStory
+            }
+
+
+
             is ScriptLauncherResponse.Battle -> {
                 prefs.selectedBattleConfig = resp.config
 

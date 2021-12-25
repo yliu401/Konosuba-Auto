@@ -203,6 +203,7 @@ class ScriptManager @Inject constructor(
             ScriptModeEnum.PresentBox -> entryPoint.giftBox()
             ScriptModeEnum.SupportImageMaker -> entryPoint.supportImageMaker()
             ScriptModeEnum.CEBomb -> entryPoint.ceBomb()
+            ScriptModeEnum.MainStory -> entryPoint.MainStory()
         }
 
     enum class PauseAction {
