@@ -23,10 +23,13 @@ Then the script will run through Hard MainStory from the Interlude and go to cha
 **WARNING: It will use your stamina beef to refill stamina.**
 
 **Here is an example of how it would run Hard Story Mode:**
-https://user-images.githubusercontent.com/55768363/152702466-62922f7a-c3d2-4b22-9f90-30f8054345f6.mp4
+
+https://user-images.githubusercontent.com/55768363/152702513-ab54b95d-828c-4625-ba7a-30eb0eac9d81.mp4
+
 
 **And here is it running the same stage over and over again:**
-https://user-images.githubusercontent.com/55768363/152702471-e9a54bc2-9f80-4550-8aab-d690a0e73500.mp4
+
+https://user-images.githubusercontent.com/55768363/152702519-07c94ba6-5a80-4fe9-a6e0-1ba32056b3b5.mp4
 
 
 
