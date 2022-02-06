@@ -27,7 +27,7 @@ Then the script will run through Hard MainStory from the Interlude and go to cha
 https://user-images.githubusercontent.com/55768363/152702513-ab54b95d-828c-4625-ba7a-30eb0eac9d81.mp4
 
 
-**And here is it running the same stage over and over again:**
+**And here the example of it running the same stage over and over again:**
 
 https://user-images.githubusercontent.com/55768363/152702519-07c94ba6-5a80-4fe9-a6e0-1ba32056b3b5.mp4
 
