@@ -10,8 +10,6 @@ This is just a very simple/fun project I decided to work on and make the pre-for
 Does not have much functionality other than re-running the same battle again as I found this process to be very annoying to do manually. As stated from before a lot of functionality is irrelavant as it only applies to Fate Grand Order.
 I may or may not add more funcationality, depending on the users, but highly unlikely as I just made this for myself.
 
-EDIT: NEW FUNCATIONALITY TO AUTO RUN HARD MAINSTORY HAS BEEN ADDED(It assumes you have cleared all Hard missions). If you have not three crowned the mission it will just skip the stage; I may add functionality to run the stage with your team instead of using skip tickets if you have not three crowned the stage.
-
 ## How to Use?
 1. Install from the link given above and launch the app.
 2. Click on `Start Service` and give all the permissions it asks for.
@@ -22,4 +20,10 @@ EDIT: NEW FUNCATIONALITY TO AUTO RUN HARD MAINSTORY HAS BEEN ADDED(It assumes yo
 ## To Auto Run Hard MainStory
 Click Quest -> Main Quests -> Press play button.
 Then the script will run through Hard MainStory from the Interlude and go to chapter 1 using skip tickets. 
-WARNING: IT DOES USE YOUR STAMINA BEEF TO REFILL YOUR STAMINA.
+## WARNING: It will use your stamina beef to refill stamina.
+## Here is an example of how it would run Hard Story Mode:
+https://user-images.githubusercontent.com/55768363/152702367-0f7e660c-6bda-4222-bffc-ffb188605559.mp4
+## And here is it running the same stage over and over again:
+https://user-images.githubusercontent.com/55768363/152702397-5ed76858-68af-4d3e-933a-702d9fca9518.mp4
+
+May add new functionality to only complete stages from a list of materials you have selected.
