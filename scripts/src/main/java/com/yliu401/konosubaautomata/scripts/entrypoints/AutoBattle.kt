@@ -158,6 +158,7 @@ class AutoBattle @Inject constructor(
         val screens: Map<() -> Boolean, () -> Unit> = mapOf(
             {isInNext()} to {next()},
             {isInReplay()} to {replay()},
+           // {isInHam()} to {Ham()},
            // {isInLeftArrow()} to {Left()},
            /* { connectionRetry.needsToRetry() } to { connectionRetry.retry() },
             { battle.isIdle() } to { battle.performBattle() },
@@ -190,6 +191,13 @@ class AutoBattle @Inject constructor(
             Duration.seconds(1).wait()
         }
     }
+    private fun isInHam() = images[Images.Stam] in locations.hamRegion
+    private fun Ham(){
+        locations.hamClick.click()
+    }
+
+
+    //Left arrow testing
     private fun isInLeftArrow() = images[Images.LeftArrow] in locations.leftArrowRegion
     private fun Left(){
         locations.leftArrowClick.click()
@@ -200,14 +208,17 @@ class AutoBattle @Inject constructor(
     private fun next(){
         isContinuing = false
         battle.resetState()
-        showRefillsAndRunsMessage()
+        //showRefillsAndRunsMessage()
         locations.nextClick.click()
     }
     //When Replay is seen on screen and clicks 2x to rerun.
     private fun isInReplay() = images[Images.Replay] in locations.replayRegion
     private fun replay(){
-        locations.nextClick.click()
-        Duration.seconds(0.6).wait()
+        while(isInReplay()){
+            Duration.seconds(0.3).wait()
+            locations.nextClick.click()
+        }
+        Duration.seconds(0.3).wait()
         locations.clickOk.click()
     }
     //If Part 1 is on screen

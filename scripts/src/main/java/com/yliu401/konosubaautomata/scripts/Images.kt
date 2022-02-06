@@ -77,6 +77,12 @@ enum class Images {
     Empty,
     Three,
     Zero,
+    Skip,
+    Stam,
+    Stam2,
+    useTickets,
+
+
 
 
 }

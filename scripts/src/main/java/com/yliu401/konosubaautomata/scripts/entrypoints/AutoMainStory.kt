@@ -35,7 +35,14 @@ class AutoMainStory @Inject constructor(
     private fun isInvalid() = images[Images.Inv_Ticket] in locations.MainStory.invalidRegion
     private fun isEmpty() = images[Images.Empty] in locations.MainStory.emptyRegion
     private fun isZero() = images[Images.Zero] in locations.MainStory.zeroRegion
+    private fun isInHam() = images[Images.Stam] in locations.MainStory.hamRegion
+    private fun isInHam2() = images[Images.Stam2] in locations.MainStory.hamRegion2
 
+    private fun isSkip() = images[Images.Skip] in locations.MainStory.skipRegion
+    private fun Skip(){
+        locations.MainStory.skipClick2.click(13)
+
+    }
 
     override fun script(): Nothing {
        /* if (images[Images.FPSummonContinue] !in locations.fp.continueSummonRegion) {
@@ -65,11 +72,10 @@ class AutoMainStory @Inject constructor(
         while (true) {
             Duration.seconds(.3).wait()
 
-            if (isInvalid() || isZero()) {// x0 Has been detected so move left, so tickets cant be used for this stage move left
+            if (isZero()) { // zero entries detected so move on //if (isInvalid() || isZero()) {// x0 Has been detected so move left, so tickets cant be used for this stage move left
                 //throw ExitException(ExitReason.InventoryFull)
                 //click left arrow key
-
-
+                Duration.seconds(.1).wait()
                 if(images[Images.LeftArrow] in locations.MainStory.leftArrowRegion)
                     locations.MainStory.leftArrowClick.click()
                 else
@@ -77,34 +83,50 @@ class AutoMainStory @Inject constructor(
             }
             else{
                 Duration.seconds(.3).wait()
-                if(!done){
-                    locations.MainStory.addTicketClick.click(4) //if it still says 0 move left
+                if(!done){//checks if x3 has been reset because of out of stamina
+                    locations.MainStory.addTicketClick.click(5) //if it still says 0 move left
                     done = true
                 }
-
-                if(isInvalid()){
-                     if(images[Images.LeftArrow] in locations.MainStory.leftArrowRegion)
-                        locations.MainStory.leftArrowClick.click()
-                }
-                else{
+                //could be an error of no stamina,
+                if(!isZero()){//Zero has not been detected, Prepare 3/3 and
                     if(images[Images.Three] !in locations.MainStory.invalidRegion && !refilled){//refill if x3 is not found
                         locations.MainStory.emptyClick.click()
-                        Duration.seconds(.3).wait()
-                        locations.MainStory.hamClick.click()
+                        while(!isInHam()) {
+                            Duration.seconds(.4).wait()
+                        }
+                        Duration.seconds(.2).wait()
+                        while(!isInHam2())
+                            locations.MainStory.hamClick.click(3)
                         Duration.seconds(.3).wait()
                         locations.MainStory.okHamClick.click()
                         refilled = true
                         count++
-                        Duration.seconds(1).wait()
-                        locations.MainStory.addTicketClick.click(5)
-                        Duration.seconds(1).wait()
+
+                        Duration.seconds(1.5).wait()
+                        locations.MainStory.addTicketClick.click(13)
+                        Duration.seconds(.7).wait()
+
+                        done = false
                     }
+
                     locations.MainStory.useTicketsClick.click()//click use tickets
-                    Duration.seconds(0.6).wait()
-                    locations.clickOk.click()//click ok
-                    Duration.seconds(1).wait()
-                    locations.MainStory.skipClick.click(20)
+                    //Duration.seconds(0.1).wait()//maybe add while loop to check if ok is there?
+                    locations.clickOk.click(5)//click ok
+                    while(!isSkip()){
+                        Duration.seconds(0.25).wait()
+                    }
+                    while(images[Images.useTickets] !in locations.MainStory.invalidRegion) {// tickets is not on screen.
+                        locations.MainStory.skipClick.click(15)
+                        Duration.seconds(0.25).wait()
+                    }
+
                     refilled = false
+                }
+
+                else if(isInvalid()){//if x0 still move left cause stage either has not been three crowned
+                    done = false
+                    if(images[Images.LeftArrow] in locations.MainStory.leftArrowRegion)
+                        locations.MainStory.leftArrowClick.click()
                 }
 
             }

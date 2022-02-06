@@ -32,13 +32,23 @@ class MainStoryLocations @Inject constructor(
     //EMPTY STAMINA
     val emptyRegion = Region(620, 850, 430, 150).xFromCenter()
     val emptyClick = Location(940,1000).xFromCenter()
-    val hamClick = Location(0,700).xFromCenter()
+    val hamRegion = Region(-160, 600, 230, 260).xFromCenter()
+    val hamRegion2 = Region(-170, 200, 240, 260).xFromCenter()
+    val hamClick = Location(-50,750).xFromCenter()
+
     val okHamClick = Location(200,1270).xFromCenter()
 
-    val zeroRegion = Region(620, 980, 430, 150).xFromCenter()
+    val zeroRegion = Region(620, 1050, 430, 150).xFromCenter()
 
 
     //clicks left arrow region
     val leftArrowRegion = Region(-540, 640, 200, 150).xFromCenter() //left arrow key
     val leftArrowClick = Location(-450, 675).xFromCenter()
+
+
+    //C_3 For Skip complete
+    val skipRegion = Region(-360, 1150, 600, 220).xFromCenter()
+    val skipClick2 = Location(0, 1190).xFromCenter()
+
+
 }

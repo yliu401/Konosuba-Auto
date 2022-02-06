@@ -123,6 +123,10 @@ class ImageLoader @Inject constructor(
         Images.Empty -> "empty.png"
         Images.Three -> "three.png"
         Images.Zero -> "zero.png"
+        Images.Skip -> "skip_complete.png"
+        Images.Stam -> "stam_ham.png"
+        Images.Stam2 -> "stam_ham2.png"
+        Images.useTickets -> "use_tickets.png"
     }
 
     override operator fun get(img: Images): IPattern = synchronized(regionCachedPatterns) {
